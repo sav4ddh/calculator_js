@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator • sav4ddh</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="screen">
+        <h2 id="screenValue">0</h2>
+        <p id="operatorValue"></p>
+      </div>
+
+      <div class="controlArea">
+        <div class="row">
+          <button onclick="setDigit('7')">7</button>
+          <button onclick="setDigit('8')">8</button>
+          <button onclick="setDigit('9')">9</button>
+          <button onclick="deleteButton()" id="deleteButton">DEL</button>
+        </div>
+        <div class="row">
+          <button onclick="setDigit('4')">4</button>
+          <button onclick="setDigit('5')">5</button>
+          <button onclick="setDigit('6')">6</button>
+          <button onclick="operatorButton('+')" id="addButton">+</button>
+        </div>
+        <div class="row">
+          <button onclick="setDigit('1')">1</button>
+          <button onclick="setDigit('2')">2</button>
+          <button onclick="setDigit('3')">3</button>
+          <button onclick="operatorButton('-')" id="minusButton">-</button>
+        </div>
+        <div class="row">
+          <button onclick="setDigit('.')">•</button>
+          <button onclick="setDigit('0')">0</button>
+          <button onclick="operatorButton('/')" id="divideButton">÷</button>
+          <button onclick="operatorButton('*')" id="multiplyButton">x</button>
+        </div>
+        <div class="row">
+          <button onclick="resetButton()" id="resetButton">RESET</button>
+          <button onclick="calculateButton()" id="equallButton">=</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

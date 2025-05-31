@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$bg-color: #3a4665;
+$primary-color: #242c44;
+$button-color: #ebe2db;
+$sec-color: #647098;
+$screen-color: #181e33;
+$tert-color: #d03e30;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: $bg-color;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+
+  .screen {
+    background: $screen-color;
+    color: #fff;
+    text-align: right;
+    padding: 5px 20px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    min-height: 71px;
+    position: relative;
+
+    h2 {
+      font-size: 40px;
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+
+    p {
+      position: absolute;
+      top: 0;
+      margin-top: 5px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  .controlArea {
+    padding: 10px;
+    background: $primary-color;
+
+    .row {
+      display: flex;
+
+      button {
+        width: 100%;
+        cursor: pointer;
+        margin: 5px;
+        font-size: 30px;
+        background: $button-color;
+        border-color: #c4c4c4;
+        font-weight: bold;
+        color: #4f4e4e;
+
+        &.active {
+          background: blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#deleteButton,
+#resetButton {
+  background: $sec-color;
+  color: white;
+}
+
+#equallButton {
+  background: $tert-color;
+  color: white;
+}
