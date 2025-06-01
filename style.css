@@ -24,13 +24,17 @@ main .screen {
   padding: 5px 20px;
   border-radius: 2px;
   margin-bottom: 8px;
-  min-height: 71px;
+  min-height: 100px;
   position: relative;
 }
 main .screen h2 {
   font-size: 40px;
   font-weight: normal;
   text-transform: capitalize;
+}
+main .screen span {
+  font-weight: bold;
+  font-size: 10px;
 }
 main .screen p {
   position: absolute;
@@ -57,9 +61,25 @@ main .controlArea .row button {
   font-weight: bold;
   color: #4f4e4e;
 }
+main .controlArea .row button:hover {
+  background: pink;
+  color: black;
+}
 main .controlArea .row button.active {
   background: blue;
   color: white;
+}
+main footer {
+  text-align: right;
+  margin-top: 5px;
+  cursor: pointer;
+}
+main footer p {
+  font-size: 15px;
+  color: white;
+}
+main footer p:hover {
+  color: rgb(89, 255, 0);
 }
 
 #deleteButton,

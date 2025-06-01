@@ -32,13 +32,18 @@ main {
     padding: 5px 20px;
     border-radius: 2px;
     margin-bottom: 8px;
-    min-height: 71px;
+    min-height: 100px;
     position: relative;
 
     h2 {
       font-size: 40px;
       font-weight: normal;
       text-transform: capitalize;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 10px;
     }
 
     p {
@@ -68,10 +73,29 @@ main {
         font-weight: bold;
         color: #4f4e4e;
 
+        &:hover {
+          background: pink;
+          color: black;
+        }
+
         &.active {
           background: blue;
           color: white;
         }
+      }
+    }
+  }
+
+  footer {
+    text-align: right;
+    margin-top: 5px;
+    cursor: pointer;
+    p {
+      font-size: 15px;
+      color: white;
+
+      &:hover {
+        color: rgb(89, 255, 0);
       }
     }
   }

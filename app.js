@@ -4,6 +4,7 @@ let isShouldBeResetted = false;
 let toBeCalculated = "";
 let display = document.getElementById("screenValue");
 let operatorIcon = document.getElementById("operatorValue");
+let prevInput = document.getElementById("prevInput");
 
 // // To Debug Code..
 // function test() {
@@ -43,11 +44,13 @@ function operatorButton(operator) {
     numberToBeOperated = "";
     display.innerHTML = "";
     operatorIcon.innerHTML = operator;
+    prevInput.innerHTML = toBeCalculated;
   } else {
     toBeCalculated = toBeCalculated + numberToBeOperated + operator;
     numberToBeOperated = "";
     display.innerHTML = null;
     operatorIcon.innerHTML = operator;
+    prevInput.innerHTML = toBeCalculated;
   }
 }
 
@@ -61,6 +64,7 @@ function calculateButton() {
       result = eval(toBeCalculated);
       numberToBeOperated = result;
       display.innerHTML = result;
+      prevInput.innerHTML = toBeCalculated;
       toBeCalculated = "";
     }
   } catch (error) {
